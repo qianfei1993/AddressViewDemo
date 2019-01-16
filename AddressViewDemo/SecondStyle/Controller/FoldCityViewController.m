@@ -218,9 +218,6 @@
     [self.view endEditing:YES];
    UIButton *cancelBtn = [self.searchView.searchBar valueForKey:@"cancelButton"]; //首先取出cancelBtn
    cancelBtn.enabled = YES; //把enabled设置为yes
-   
-//    FoldCityTableViewCell *cell = [self.tableView visibleCells].firstObject;
-//    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
 }
 
 // 搜索
@@ -241,64 +238,53 @@
 // 实时搜索
 -(void)searchString:(NSString *)string{
    
-   if (kISNullString(string)) {
-      self.isSearch = NO;
+   if (!kISNullString(string)) {
+      
+      self.isSearch = YES;
+      [self.clickArr removeAllObjects];
       [self.dataArray removeAllObjects];
       [self.sectionTitlesArray removeAllObjects];
-      [self loadData];
-   }else{
-      self.isSearch = YES;
-      [self searchStr:string];
-   }
-}
-
-
-// 配置搜索数据
--(void)searchStr:(NSString *)string{
-    
-    [self.clickArr removeAllObjects];
-    [self.dataArray removeAllObjects];
-    [self.sectionTitlesArray removeAllObjects];
-    [self.searchResultArray removeAllObjects];
-    [self.rightIndexArray removeAllObjects];
-    
-    // 判断是不是拼音
-    if ([SecondData isLetter:string]) {
-        // 证明输入的是拼音
-        [self.searchArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+      [self.searchResultArray removeAllObjects];
+      [self.rightIndexArray removeAllObjects];
+      
+      // 判断是不是拼音
+      if ([SecondData isLetter:string]) {
+         // 证明输入的是拼音
+         [self.searchArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             NSArray *arr = obj;
             NSMutableArray *mulArr = [NSMutableArray array];
             for (NSDictionary *dict in arr) {
-                NSString *name = dict[@"name"];
-                NSString *pinyin = [BMChineseSort transformChinese:name];
-                NSMutableDictionary *mulDict = dict.mutableCopy;
-                [mulDict setObject:pinyin forKey:@"pingyin"];
-                [mulArr addObject:mulDict];
+               NSString *name = dict[@"name"];
+               NSString *pinyin = [BMChineseSort transformChinese:name];
+               NSMutableDictionary *mulDict = dict.mutableCopy;
+               [mulDict setObject:pinyin forKey:@"pingyin"];
+               [mulArr addObject:mulDict];
             }
             NSPredicate *pred = [NSPredicate predicateWithFormat:@"%K CONTAINS[c] %@",@"pingyin",string];
             NSArray *array = [mulArr filteredArrayUsingPredicate:pred];
             [self.searchResultArray addObjectsFromArray:array];
-        }];
-    }else{
-        
-        //证明输入的不是拼音
-        [self.searchArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-  
+         }];
+      }else{
+         
+         //证明输入的不是拼音
+         [self.searchArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            
             NSPredicate *pred = [NSPredicate predicateWithFormat:@"%K CONTAINS[c] %@",@"name",string];
             NSArray *array = [obj filteredArrayUsingPredicate:pred];
             [self.searchResultArray addObjectsFromArray:array];
-        }];
-    }
-    // 排序
-    [BMChineseSort sortAndGroup:self.searchResultArray key:@"name" finish:^(bool isSuccess, NSMutableArray *unGroupArr, NSMutableArray *sectionTitleArr, NSMutableArray<NSMutableArray *> *sortedObjArr) {
-        if (isSuccess) {
+         }];
+      }
+      // 排序
+      [BMChineseSort sortAndGroup:self.searchResultArray key:@"name" finish:^(bool isSuccess, NSMutableArray *unGroupArr, NSMutableArray *sectionTitleArr, NSMutableArray<NSMutableArray *> *sortedObjArr) {
+         if (isSuccess) {
             self.sectionTitlesArray = sectionTitleArr;
             self.dataArray = sortedObjArr;
             [self.rightIndexArray addObjectsFromArray:self.sectionTitlesArray];
             [self.tableView reloadData];
-           // [self.indexTitlesTableView reloadData];
-        }
-    }];
+             self.tableView.sc_indexViewDataSource = self.rightIndexArray.copy;
+         }
+      }];
+   }
 }
 
 // 初始化
