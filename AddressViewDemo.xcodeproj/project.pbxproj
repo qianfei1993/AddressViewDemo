@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B320906D21EF08330067F162 /* searchStyle1.png in Resources */ = {isa = PBXBuildFile; fileRef = B320906921EF08310067F162 /* searchStyle1.png */; };
+		B320906E21EF08330067F162 /* style1.png in Resources */ = {isa = PBXBuildFile; fileRef = B320906A21EF08320067F162 /* style1.png */; };
+		B320906F21EF08330067F162 /* searchStyle2.png in Resources */ = {isa = PBXBuildFile; fileRef = B320906B21EF08320067F162 /* searchStyle2.png */; };
+		B320907021EF08330067F162 /* style2.png in Resources */ = {isa = PBXBuildFile; fileRef = B320906C21EF08320067F162 /* style2.png */; };
 		B33D401E21ED7403001CF884 /* SecondData.m in Sources */ = {isa = PBXBuildFile; fileRef = B33D401D21ED7403001CF884 /* SecondData.m */; };
 		B33D403921EDE42A001CF884 /* SCIndexViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B33D403321EDE42A001CF884 /* SCIndexViewConfiguration.m */; };
 		B33D403A21EDE42A001CF884 /* SCIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = B33D403521EDE42A001CF884 /* SCIndexView.m */; };
@@ -73,6 +77,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B320906921EF08310067F162 /* searchStyle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchStyle1.png; sourceTree = "<group>"; };
+		B320906A21EF08320067F162 /* style1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style1.png; sourceTree = "<group>"; };
+		B320906B21EF08320067F162 /* searchStyle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchStyle2.png; sourceTree = "<group>"; };
+		B320906C21EF08320067F162 /* style2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = style2.png; sourceTree = "<group>"; };
 		B33D401C21ED7403001CF884 /* SecondData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondData.h; sourceTree = "<group>"; };
 		B33D401D21ED7403001CF884 /* SecondData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondData.m; sourceTree = "<group>"; };
 		B33D403321EDE42A001CF884 /* SCIndexViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexViewConfiguration.m; sourceTree = "<group>"; };
@@ -279,6 +287,10 @@
 				B37FD01C21E3527100E53470 /* RootViewController.xib */,
 				B37FCFC521E34F0E00E53470 /* Main.storyboard */,
 				B37FCFC821E34F1D00E53470 /* Assets.xcassets */,
+				B320906921EF08310067F162 /* searchStyle1.png */,
+				B320906B21EF08320067F162 /* searchStyle2.png */,
+				B320906A21EF08320067F162 /* style1.png */,
+				B320906C21EF08320067F162 /* style2.png */,
 				B37FCFCA21E34F1D00E53470 /* LaunchScreen.storyboard */,
 				B37FCFCD21E34F1D00E53470 /* Info.plist */,
 				B37FCFCE21E34F1D00E53470 /* main.m */,
@@ -514,8 +526,12 @@
 				B37FCFCC21E34F1D00E53470 /* LaunchScreen.storyboard in Resources */,
 				B3943FCB21EC76C200C1F793 /* CityCollectionViewCell.xib in Resources */,
 				B3943FC321EC76C200C1F793 /* FoldCityViewController.xib in Resources */,
+				B320906D21EF08330067F162 /* searchStyle1.png in Resources */,
+				B320906E21EF08330067F162 /* style1.png in Resources */,
 				B37FCFC921E34F1D00E53470 /* Assets.xcassets in Resources */,
+				B320906F21EF08330067F162 /* searchStyle2.png in Resources */,
 				B375A8C521E43DF700E49EBE /* area.json in Resources */,
+				B320907021EF08330067F162 /* style2.png in Resources */,
 				B375A8C721E44A8700E49EBE /* CityViewController.xib in Resources */,
 				B3943FC621EC76C200C1F793 /* indexTitlesTableViewCell.xib in Resources */,
 				B37FD01E21E3527100E53470 /* RootViewController.xib in Resources */,
