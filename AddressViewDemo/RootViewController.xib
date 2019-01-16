@@ -14,6 +14,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
             <connections>
                 <outlet property="cityButton" destination="jTa-Ly-gQ1" id="SUR-Ev-H0L"/>
+                <outlet property="foldButton" destination="beu-o0-PgE" id="r2b-dW-avm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,18 +28,31 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="jTa-Ly-gQ1" secondAttribute="height" multiplier="67:9" id="1dF-cN-wf1"/>
                     </constraints>
-                    <state key="normal" title="列表"/>
+                    <state key="normal" title="列表样式"/>
                     <connections>
                         <action selector="cityListViewAction:" destination="-1" eventType="touchUpInside" id="F4G-tq-IDL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beu-o0-PgE">
+                    <rect key="frame" x="25" y="178.5" width="325" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="beu-o0-PgE" secondAttribute="height" multiplier="67:9" id="pnB-Rn-plX"/>
+                    </constraints>
+                    <state key="normal" title="列表可折叠"/>
+                    <connections>
+                        <action selector="foldButtonAction:" destination="-1" eventType="touchUpInside" id="utj-80-ybk"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="beu-o0-PgE" secondAttribute="trailing" constant="25" id="1dq-jH-CiC"/>
                 <constraint firstItem="jTa-Ly-gQ1" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="33S-CI-47Y"/>
+                <constraint firstItem="beu-o0-PgE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="6MX-OE-N7k"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jTa-Ly-gQ1" secondAttribute="trailing" constant="25" id="RFM-wR-aRm"/>
                 <constraint firstItem="jTa-Ly-gQ1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="Ztt-4r-niW"/>
                 <constraint firstItem="jTa-Ly-gQ1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xCL-mZ-JOK"/>
+                <constraint firstItem="beu-o0-PgE" firstAttribute="top" secondItem="jTa-Ly-gQ1" secondAttribute="bottom" constant="35" id="zem-Sh-vjx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoldCityTableViewCellID" rowHeight="146" id="KGk-i7-Jjw" customClass="FoldCityTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Yhc-rA-Ymb">
+                        <rect key="frame" x="15" y="49" width="274" height="90.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q8s-tg-5CU">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-mb-G3f">
+                        <rect key="frame" x="15" y="0.0" width="274" height="49"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="iXn-PE-RGv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button" image="triangle_black">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="triangle_blue"/>
+                        <connections>
+                            <action selector="titleButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bdc-Kd-LRq"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdy-Bv-fPj">
+                        <rect key="frame" x="15" y="144.5" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OCq-ah-W4h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Yhc-rA-Ymb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1XD-De-DA5"/>
+                    <constraint firstAttribute="bottom" secondItem="Wdy-Bv-fPj" secondAttribute="bottom" id="1eR-fV-L6w"/>
+                    <constraint firstAttribute="trailing" secondItem="Wdy-Bv-fPj" secondAttribute="trailing" id="GX6-ss-jEZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Yhc-rA-Ymb" secondAttribute="trailing" constant="31" id="TPN-bb-4hU"/>
+                    <constraint firstItem="Hh4-mb-G3f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YxL-0Y-s5a"/>
+                    <constraint firstAttribute="trailing" secondItem="Hh4-mb-G3f" secondAttribute="trailing" constant="31" id="Zb8-jL-zyU"/>
+                    <constraint firstItem="Hh4-mb-G3f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Zc8-DB-igL"/>
+                    <constraint firstItem="Wdy-Bv-fPj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="clT-un-Aje"/>
+                    <constraint firstItem="Yhc-rA-Ymb" firstAttribute="top" secondItem="Hh4-mb-G3f" secondAttribute="bottom" id="iS2-bv-BLe"/>
+                    <constraint firstItem="Wdy-Bv-fPj" firstAttribute="top" secondItem="Yhc-rA-Ymb" secondAttribute="bottom" constant="5" id="rms-xn-yQH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityCollectionView" destination="Yhc-rA-Ymb" id="PkM-F0-Qu5"/>
+                <outlet property="lineView" destination="Wdy-Bv-fPj" id="oxd-iE-XcG"/>
+                <outlet property="titleButton" destination="Hh4-mb-G3f" id="Sjb-ci-K6v"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="triangle_black" width="10" height="10"/>
+        <image name="triangle_blue" width="10" height="10"/>
+    </resources>
+</document>

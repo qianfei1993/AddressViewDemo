@@ -118,7 +118,7 @@
 || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
 
-//判断对象是否为空,为空的话则返回默认值
+//判断对象是否为空,为空则返回默认值
 #define D_StringFix(_value,_default) ([_value isKindOfClass:[NSNull class]] || !_value || _value == nil || [_value isEqualToString:@"(null)"] || [_value isEqualToString:@"<null>"] || [_value isEqualToString:@""] || [_value length] == 0)?_default:_value
 
 /**
