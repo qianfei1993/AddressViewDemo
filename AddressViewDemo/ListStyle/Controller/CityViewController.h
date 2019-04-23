@@ -10,7 +10,6 @@
 
 @interface CityViewController : UIViewController
 
-@property (nonatomic,copy)void(^selectString)(NSString *string,NSString *strID);
-@property (nonatomic,copy)NSString *currentCityString;
+@property (nonatomic,copy)void(^selectCityBlock)(NSString *string,NSString *strID);
 
 @end

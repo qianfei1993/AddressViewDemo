@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
             <connections>
+                <outlet property="addressListButton" destination="OuI-im-9t9" id="04y-5m-Ube"/>
+                <outlet property="addressPickerButton" destination="xhB-0B-FaF" id="OBH-WY-FwI"/>
                 <outlet property="cityButton" destination="jTa-Ly-gQ1" id="SUR-Ev-H0L"/>
                 <outlet property="foldButton" destination="beu-o0-PgE" id="r2b-dW-avm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTa-Ly-gQ1">
-                    <rect key="frame" x="25" y="100" width="325" height="43.5"/>
+                    <rect key="frame" x="25" y="108" width="325" height="43.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="jTa-Ly-gQ1" secondAttribute="height" multiplier="67:9" id="1dF-cN-wf1"/>
                     </constraints>
@@ -34,7 +35,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beu-o0-PgE">
-                    <rect key="frame" x="25" y="178.5" width="325" height="44"/>
+                    <rect key="frame" x="25" y="186.5" width="325" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="beu-o0-PgE" secondAttribute="height" multiplier="67:9" id="pnB-Rn-plX"/>
                     </constraints>
@@ -43,15 +44,41 @@
                         <action selector="foldButtonAction:" destination="-1" eventType="touchUpInside" id="utj-80-ybk"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuI-im-9t9">
+                    <rect key="frame" x="25" y="265.5" width="325" height="43.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OuI-im-9t9" secondAttribute="height" multiplier="67:9" id="w4h-HK-78R"/>
+                    </constraints>
+                    <state key="normal" title="地址选择"/>
+                    <connections>
+                        <action selector="addressListButtonAction:" destination="-1" eventType="touchUpInside" id="qEa-m0-i3J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhB-0B-FaF">
+                    <rect key="frame" x="25" y="344" width="325" height="43.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xhB-0B-FaF" secondAttribute="height" multiplier="67:9" id="363-oe-Nfq"/>
+                    </constraints>
+                    <state key="normal" title="地址选择"/>
+                    <connections>
+                        <action selector="addressPickerButtonAction:" destination="-1" eventType="touchUpInside" id="WT5-Lf-RwD"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="beu-o0-PgE" secondAttribute="trailing" constant="25" id="1dq-jH-CiC"/>
-                <constraint firstItem="jTa-Ly-gQ1" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="33S-CI-47Y"/>
+                <constraint firstItem="jTa-Ly-gQ1" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="88" id="33S-CI-47Y"/>
+                <constraint firstItem="xhB-0B-FaF" firstAttribute="top" secondItem="OuI-im-9t9" secondAttribute="bottom" constant="35" id="3Zy-ni-nAW"/>
                 <constraint firstItem="beu-o0-PgE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="6MX-OE-N7k"/>
+                <constraint firstItem="OuI-im-9t9" firstAttribute="top" secondItem="beu-o0-PgE" secondAttribute="bottom" constant="35" id="M50-gZ-H5q"/>
+                <constraint firstItem="xhB-0B-FaF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="QtU-Gi-dyh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xhB-0B-FaF" secondAttribute="trailing" constant="25" id="R9Y-Bm-d6j"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jTa-Ly-gQ1" secondAttribute="trailing" constant="25" id="RFM-wR-aRm"/>
                 <constraint firstItem="jTa-Ly-gQ1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="Ztt-4r-niW"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="OuI-im-9t9" secondAttribute="trailing" constant="25" id="qEK-L7-u9C"/>
                 <constraint firstItem="jTa-Ly-gQ1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xCL-mZ-JOK"/>
+                <constraint firstItem="OuI-im-9t9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="xfQ-kL-ibK"/>
                 <constraint firstItem="beu-o0-PgE" firstAttribute="top" secondItem="jTa-Ly-gQ1" secondAttribute="bottom" constant="35" id="zem-Sh-vjx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

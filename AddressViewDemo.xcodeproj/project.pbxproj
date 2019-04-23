@@ -23,7 +23,6 @@
 		B375A8C521E43DF700E49EBE /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = B375A8C421E43DF700E49EBE /* area.json */; };
 		B375A8C721E44A8700E49EBE /* CityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B375A8C621E44A8700E49EBE /* CityViewController.xib */; };
 		B37FCFC121E34F0E00E53470 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B37FCFC021E34F0E00E53470 /* AppDelegate.m */; };
-		B37FCFC721E34F0E00E53470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37FCFC521E34F0E00E53470 /* Main.storyboard */; };
 		B37FCFC921E34F1D00E53470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37FCFC821E34F1D00E53470 /* Assets.xcassets */; };
 		B37FCFCC21E34F1D00E53470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37FCFCA21E34F1D00E53470 /* LaunchScreen.storyboard */; };
 		B37FCFCF21E34F1D00E53470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B37FCFCE21E34F1D00E53470 /* main.m */; };
@@ -55,8 +54,17 @@
 		B3943FFC21EC828200C1F793 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B3943FEE21EC828200C1F793 /* MASConstraint.m */; };
 		B3943FFD21EC828200C1F793 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B3943FF021EC828200C1F793 /* MASViewConstraint.m */; };
 		B3943FFE21EC828200C1F793 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B3943FF121EC828200C1F793 /* MASViewAttribute.m */; };
-		B3943FFF21EC828200C1F793 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3943FF221EC828200C1F793 /* Info.plist */; };
 		B394400521EC888D00C1F793 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B394400421EC888D00C1F793 /* NSString+Size.m */; };
+		B3C35F17226EBDE0008B8A41 /* AddressListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C35F0B226EBDDC008B8A41 /* AddressListView.m */; };
+		B3C35F18226EBDE0008B8A41 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C35F0C226EBDDC008B8A41 /* CityModel.m */; };
+		B3C35F19226EBDE0008B8A41 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C35F0D226EBDDC008B8A41 /* UIColor+HexString.m */; };
+		B3C35F1B226EBDE0008B8A41 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C35F10226EBDDE008B8A41 /* AddressCell.xib */; };
+		B3C35F1C226EBDE0008B8A41 /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C35F14226EBDDF008B8A41 /* AddressCell.m */; };
+		B3C35F1D226EBDE0008B8A41 /* AddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C35F15226EBDDF008B8A41 /* AddressPickerView.m */; };
+		B3C35F24226ECC5F008B8A41 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C35F21226ECC5F008B8A41 /* NSObject+YYModel.m */; };
+		B3C35F25226ECC5F008B8A41 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C35F22226ECC5F008B8A41 /* YYClassInfo.m */; };
+		B3E6C056226F15DF0051E9C5 /* addressPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E6C054226F15DF0051E9C5 /* addressPicker.png */; };
+		B3E6C057226F15DF0051E9C5 /* addressList.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E6C055226F15DF0051E9C5 /* addressList.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +114,6 @@
 		B37FCFBC21E34F0E00E53470 /* AddressViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37FCFBF21E34F0E00E53470 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B37FCFC021E34F0E00E53470 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B37FCFC621E34F0E00E53470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B37FCFC821E34F1D00E53470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B37FCFCB21E34F1D00E53470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B37FCFCD21E34F1D00E53470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +179,24 @@
 		B3943FF221EC828200C1F793 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B394400321EC888D00C1F793 /* NSString+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		B394400421EC888D00C1F793 /* NSString+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		B3C35F0B226EBDDC008B8A41 /* AddressListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListView.m; sourceTree = "<group>"; };
+		B3C35F0C226EBDDC008B8A41 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		B3C35F0D226EBDDC008B8A41 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		B3C35F0F226EBDDE008B8A41 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		B3C35F10226EBDDE008B8A41 /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
+		B3C35F11226EBDDE008B8A41 /* AddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
+		B3C35F12226EBDDE008B8A41 /* AddressListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListView.h; sourceTree = "<group>"; };
+		B3C35F13226EBDDF008B8A41 /* AddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickerView.h; sourceTree = "<group>"; };
+		B3C35F14226EBDDF008B8A41 /* AddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
+		B3C35F15226EBDDF008B8A41 /* AddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickerView.m; sourceTree = "<group>"; };
+		B3C35F16226EBDE0008B8A41 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		B3C35F1F226ECC5F008B8A41 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		B3C35F20226ECC5F008B8A41 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		B3C35F21226ECC5F008B8A41 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		B3C35F22226ECC5F008B8A41 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		B3C35F23226ECC5F008B8A41 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		B3E6C054226F15DF0051E9C5 /* addressPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addressPicker.png; sourceTree = "<group>"; };
+		B3E6C055226F15DF0051E9C5 /* addressList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addressList.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,13 +246,13 @@
 			path = SCIndexView;
 			sourceTree = "<group>";
 		};
-		B375A8A921E43CD300E49EBE /* FirstStyle */ = {
+		B375A8A921E43CD300E49EBE /* ListStyle */ = {
 			isa = PBXGroup;
 			children = (
 				B375A8AB21E43CD300E49EBE /* Controller */,
 				B375A8B121E43CD300E49EBE /* View */,
 			);
-			path = FirstStyle;
+			path = ListStyle;
 			sourceTree = "<group>";
 		};
 		B375A8AB21E43CD300E49EBE /* Controller */ = {
@@ -276,21 +301,23 @@
 		B37FCFBE21E34F0E00E53470 /* AddressViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B3943FAD21EC746100C1F793 /* Other */,
-				B3943FAC21EC746000C1F793 /* Resource */,
-				B375A8A921E43CD300E49EBE /* FirstStyle */,
-				B3943FAE21EC768E00C1F793 /* SecondStyle */,
 				B37FCFBF21E34F0E00E53470 /* AppDelegate.h */,
 				B37FCFC021E34F0E00E53470 /* AppDelegate.m */,
+				B3943FAD21EC746100C1F793 /* Other */,
+				B375A8A921E43CD300E49EBE /* ListStyle */,
+				B3943FAE21EC768E00C1F793 /* FoldStyle */,
+				B3C35F0A226EBCD5008B8A41 /* AddressStyle */,
 				B37FD01A21E3527100E53470 /* RootViewController.h */,
 				B37FD01B21E3527100E53470 /* RootViewController.m */,
+				B3943FAC21EC746000C1F793 /* Resource */,
 				B37FD01C21E3527100E53470 /* RootViewController.xib */,
-				B37FCFC521E34F0E00E53470 /* Main.storyboard */,
 				B37FCFC821E34F1D00E53470 /* Assets.xcassets */,
 				B320906921EF08310067F162 /* searchStyle1.png */,
 				B320906B21EF08320067F162 /* searchStyle2.png */,
 				B320906A21EF08320067F162 /* style1.png */,
 				B320906C21EF08320067F162 /* style2.png */,
+				B3E6C055226F15DF0051E9C5 /* addressList.png */,
+				B3E6C054226F15DF0051E9C5 /* addressPicker.png */,
 				B37FCFCA21E34F1D00E53470 /* LaunchScreen.storyboard */,
 				B37FCFCD21E34F1D00E53470 /* Info.plist */,
 				B37FCFCE21E34F1D00E53470 /* main.m */,
@@ -327,11 +354,14 @@
 		B3943FAD21EC746100C1F793 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B3C35F1E226ECC5F008B8A41 /* YYModel */,
 				B3943FD421EC828200C1F793 /* Masonry */,
 				B375A8A521E435C800E49EBE /* PrefixHeader.pch */,
 				B375A8A421E4358D00E49EBE /* Header.h */,
 				B37FD02021E353DA00E53470 /* UIView+Frame.h */,
 				B37FD01F21E353DA00E53470 /* UIView+Frame.m */,
+				B3C35F16226EBDE0008B8A41 /* UIColor+HexString.h */,
+				B3C35F0D226EBDDC008B8A41 /* UIColor+HexString.m */,
 				B3943FCF21EC78F500C1F793 /* UIButton+Category.h */,
 				B3943FCE21EC78F500C1F793 /* UIButton+Category.m */,
 				B394400321EC888D00C1F793 /* NSString+Size.h */,
@@ -344,14 +374,14 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		B3943FAE21EC768E00C1F793 /* SecondStyle */ = {
+		B3943FAE21EC768E00C1F793 /* FoldStyle */ = {
 			isa = PBXGroup;
 			children = (
 				B3943FAF21EC76C100C1F793 /* Controller */,
 				B33D401B21ED73CE001CF884 /* Model */,
 				B3943FB521EC76C200C1F793 /* View */,
 			);
-			path = SecondStyle;
+			path = FoldStyle;
 			sourceTree = "<group>";
 		};
 		B3943FAF21EC76C100C1F793 /* Controller */ = {
@@ -418,6 +448,34 @@
 				B3943FF221EC828200C1F793 /* Info.plist */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B3C35F0A226EBCD5008B8A41 /* AddressStyle */ = {
+			isa = PBXGroup;
+			children = (
+				B3C35F12226EBDDE008B8A41 /* AddressListView.h */,
+				B3C35F0B226EBDDC008B8A41 /* AddressListView.m */,
+				B3C35F13226EBDDF008B8A41 /* AddressPickerView.h */,
+				B3C35F15226EBDDF008B8A41 /* AddressPickerView.m */,
+				B3C35F11226EBDDE008B8A41 /* AddressCell.h */,
+				B3C35F14226EBDDF008B8A41 /* AddressCell.m */,
+				B3C35F10226EBDDE008B8A41 /* AddressCell.xib */,
+				B3C35F0F226EBDDE008B8A41 /* CityModel.h */,
+				B3C35F0C226EBDDC008B8A41 /* CityModel.m */,
+			);
+			path = AddressStyle;
+			sourceTree = "<group>";
+		};
+		B3C35F1E226ECC5F008B8A41 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3C35F1F226ECC5F008B8A41 /* YYClassInfo.h */,
+				B3C35F20226ECC5F008B8A41 /* YYModel.h */,
+				B3C35F21226ECC5F008B8A41 /* NSObject+YYModel.m */,
+				B3C35F22226ECC5F008B8A41 /* YYClassInfo.m */,
+				B3C35F23226ECC5F008B8A41 /* NSObject+YYModel.h */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,17 +585,18 @@
 				B3943FCB21EC76C200C1F793 /* CityCollectionViewCell.xib in Resources */,
 				B3943FC321EC76C200C1F793 /* FoldCityViewController.xib in Resources */,
 				B320906D21EF08330067F162 /* searchStyle1.png in Resources */,
+				B3E6C057226F15DF0051E9C5 /* addressList.png in Resources */,
+				B3E6C056226F15DF0051E9C5 /* addressPicker.png in Resources */,
 				B320906E21EF08330067F162 /* style1.png in Resources */,
 				B37FCFC921E34F1D00E53470 /* Assets.xcassets in Resources */,
+				B3C35F1B226EBDE0008B8A41 /* AddressCell.xib in Resources */,
 				B320906F21EF08330067F162 /* searchStyle2.png in Resources */,
 				B375A8C521E43DF700E49EBE /* area.json in Resources */,
 				B320907021EF08330067F162 /* style2.png in Resources */,
 				B375A8C721E44A8700E49EBE /* CityViewController.xib in Resources */,
 				B3943FC621EC76C200C1F793 /* indexTitlesTableViewCell.xib in Resources */,
 				B37FD01E21E3527100E53470 /* RootViewController.xib in Resources */,
-				B3943FFF21EC828200C1F793 /* Info.plist in Resources */,
 				B3943FC921EC76C200C1F793 /* FoldCityTableViewCell.xib in Resources */,
-				B37FCFC721E34F0E00E53470 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,19 +621,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C35F24226ECC5F008B8A41 /* NSObject+YYModel.m in Sources */,
 				B3943FFD21EC828200C1F793 /* MASViewConstraint.m in Sources */,
 				B3943FC821EC76C200C1F793 /* FoldCityTableViewCell.m in Sources */,
 				B37FD01D21E3527100E53470 /* RootViewController.m in Sources */,
 				B375A8BB21E43CD400E49EBE /* CityTableViewCell.m in Sources */,
+				B3C35F18226EBDE0008B8A41 /* CityModel.m in Sources */,
 				B3943FD021EC78F600C1F793 /* UIButton+Category.m in Sources */,
 				B33D403921EDE42A001CF884 /* SCIndexViewConfiguration.m in Sources */,
 				B3943FFE21EC828200C1F793 /* MASViewAttribute.m in Sources */,
+				B3C35F17226EBDE0008B8A41 /* AddressListView.m in Sources */,
 				B3943FF821EC828200C1F793 /* MASLayoutConstraint.m in Sources */,
 				B3943FCD21EC76C200C1F793 /* indexTitlesTableViewCell.m in Sources */,
 				B375A8BD21E43CD400E49EBE /* CustomSearchView.m in Sources */,
 				B394400521EC888D00C1F793 /* NSString+Size.m in Sources */,
 				B3943FF421EC828200C1F793 /* MMLabel.m in Sources */,
 				B33D401E21ED7403001CF884 /* SecondData.m in Sources */,
+				B3C35F1D226EBDE0008B8A41 /* AddressPickerView.m in Sources */,
 				B3943FFA21EC828200C1F793 /* View+MASAdditions.m in Sources */,
 				B3943FC521EC76C200C1F793 /* FoldCityViewController.m in Sources */,
 				B33D403B21EDE42A001CF884 /* UITableView+SCIndexView.m in Sources */,
@@ -586,11 +649,14 @@
 				B375A8C321E43D4900E49EBE /* SystemLocationTool.m in Sources */,
 				B3943FF521EC828200C1F793 /* ViewController+MASAdditions.m in Sources */,
 				B37FCFCF21E34F1D00E53470 /* main.m in Sources */,
+				B3C35F25226ECC5F008B8A41 /* YYClassInfo.m in Sources */,
 				B37FD02121E353DA00E53470 /* UIView+Frame.m in Sources */,
 				B3943FC721EC76C200C1F793 /* CityCollectionViewCell.m in Sources */,
 				B3943FF621EC828200C1F793 /* MASCompositeConstraint.m in Sources */,
 				B3943FD321EC795F00C1F793 /* CityCollectionViewFlowLayout.m in Sources */,
+				B3C35F19226EBDE0008B8A41 /* UIColor+HexString.m in Sources */,
 				B3943FFB21EC828200C1F793 /* myView.m in Sources */,
+				B3C35F1C226EBDE0008B8A41 /* AddressCell.m in Sources */,
 				B375A8B921E43CD400E49EBE /* CityViewController.m in Sources */,
 				B3841C1021E7264600B31E7A /* BMChineseSort.m in Sources */,
 				B375A8B821E43CD400E49EBE /* ResultCityController.m in Sources */,
@@ -630,14 +696,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B37FCFC521E34F0E00E53470 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B37FCFC621E34F0E00E53470 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B37FCFCA21E34F1D00E53470 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -764,16 +822,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NQ73GGTJNA;
+				DEVELOPMENT_TEAM = 26VW525SY4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AddressViewDemo/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = AddressViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianfei.AddressViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -782,16 +841,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NQ73GGTJNA;
+				DEVELOPMENT_TEAM = 26VW525SY4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AddressViewDemo/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = AddressViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianfei.AddressViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

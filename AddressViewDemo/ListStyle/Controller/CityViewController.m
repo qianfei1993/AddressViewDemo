@@ -18,14 +18,15 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,retain) CustomSearchView *searchView; //searchBar所在的view
-@property (nonatomic,retain)UIView *blackView; //输入框编辑时的黑色背景view
-@property (nonatomic,retain)NSMutableArray *sectionTitlesArray; // 区头数组
-@property (nonatomic,retain)NSMutableArray *rightIndexArray; // 右边索引数组
-@property (nonatomic,retain)NSMutableArray *dataArray;// cell数据源数组
-@property (nonatomic,retain)NSMutableArray *searchArray;// 用于搜索的数组
-@property (nonatomic,retain)ResultCityController *resultController;//显示结果的controller
-@property (nonatomic,retain)NSArray *locationCityArray;// 定位城市
-@property (nonatomic,retain)NSArray *hotCityArray; // 热门城市
+@property (nonatomic,retain) UIView *blackView; //输入框编辑时的黑色背景view
+@property (nonatomic,retain) NSMutableArray *sectionTitlesArray; // 区头数组
+@property (nonatomic,retain) NSMutableArray *rightIndexArray; // 右边索引数组
+@property (nonatomic,retain) NSMutableArray *dataArray;// cell数据源数组
+@property (nonatomic,retain) NSMutableArray *searchArray;// 用于搜索的数组
+@property (nonatomic,retain) ResultCityController *resultController;//显示结果的controller
+@property (nonatomic,retain) NSArray *locationCityArray;// 定位城市
+@property (nonatomic,retain) NSArray *hotCityArray; // 热门城市
+@property (nonatomic,copy) NSString *currentCityString; //当前城市
 @end
 
 @implementation CityViewController
@@ -113,13 +114,13 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.didSelectedBtn = ^(int tag){
             if(tag==99999){
-                weakSelf.selectString(weakSelf.currentCityString,@"定位无code");
+                weakSelf.selectCityBlock(weakSelf.currentCityString,@"定位无code");
             }else{
                 
                 NSDictionary *dict = self.hotCityArray[tag];
                 NSString *cityStr = [NSString stringWithFormat:@"%@",dict[@"name"]];
                 NSString *codeStr = [NSString stringWithFormat:@"%@",dict[@"adcode"]];
-                weakSelf.selectString(cityStr,codeStr);
+                weakSelf.selectCityBlock(cityStr,codeStr);
             }
             [weakSelf dismissViewControllerAnimated:YES completion:nil];
         };
@@ -175,7 +176,7 @@
         NSDictionary *dict = self.dataArray[indexPath.section][indexPath.row];
         NSString *cityStr = [NSString stringWithFormat:@"%@",dict[@"name"]];
         NSString *cityCode = [NSString stringWithFormat:@"%@",dict[@"adcode"]];
-        self.selectString(cityStr,cityCode);
+        self.selectCityBlock(cityStr,cityCode);
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
@@ -232,7 +233,7 @@
 
 -(void)didSelectedString:(NSString *)string :(NSString *)strID{
     
-    self.selectString(string,strID);
+    self.selectCityBlock(string,strID);
     [self didSelectCancelBtn];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
